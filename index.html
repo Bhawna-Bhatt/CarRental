@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Site</title>
+    <style>
+        td { text-align: right;}
+    </style>
+</head>
+<body style="margin-left: 15px;">
+    <h2>ACME Car Rental</h2>
+    <p>Pickup date &nbsp;<input type="text" id="pickup"></p>
+    <p>Number of days &nbsp;<input type="text" id="noofdays"></p>
+    
+    <form >
+        <fieldset id="choiceSelection">
+            <legend> Options</legend>
+                <input type="checkbox" id ="toll" value="toll">
+                <label for="toll" >Electronic Toll Tag($3.95/day)</label><br><br>
+                <input type="checkbox" id ="gps" value="gps">
+                <label for="toll" >GPS ($2.95/day)</label><br><br>
+                <input type="checkbox" id ="roadside" value="roadside">
+                <label for="toll" >Roadside Assistance($2.95/day)</label>
+        </fieldset>
+            
+    </form>
+    <br>
+    
+    <form >
+        <fieldset id="yearSelection">
+            <legend>Under 25</legend>
+            <input type="radio" id ="noBtn" name ="underage" value="no">
+            <label for="no" >No</label>
+            <input type="radio" id ="yesBtn" name = "underage" value="yes">
+            <label for="yes" >Yes</label><br><br>
+        </fieldset>
+    </form>
+    <br><br>
+     <input type="button" id="totalBtn" value="Estimate Total Cost">
+     <label for="totalBtn"></label>
+    <br><br><br>
+     <div>
+        <table >
+        <tr>
+            <td >Car Rental:</td>
+            <td id="carRental" ></td>
+        </tr>
+        <tr>
+            <td>Options:</td>
+            <td id ="optiontotal"> xx.xx</td>
+        </tr>
+        <tr id="under25"><td>Under 25 surcharge:</td>
+            <td id="surcharge"> xx.xx</td>
+        
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+
+        <tr>
+            
+            <td>Total Due:</td>
+            <td id="totaldue"> xxx.xx </td>
+        </tr>
+        </table>
+     </div>
+
+     <script src="./script/index.js"></script>
+</body>
+</html>
